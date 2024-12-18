@@ -1,0 +1,131 @@
+#load img.jpeg and call it 'img'
+load img.jpeg img
+
+#brighten image by adding 10
+brighten 50 img img-brighter
+
+#Blurring the given image.
+blur img img-blur
+
+#Sharpen the given image.
+sharpen img img-sharpen
+
+#Extracting red component to the given image.
+red-component img img-red
+
+#Extracting green component to the given image.
+green-component img img-green
+
+#Extracting blue component to the given image.
+blue-component img img-blue
+
+#Extracting value component to the given image.
+value-component img img-value
+
+#Extracting luma component to the given image.
+luma-component img img-luma
+
+#Extracting intensity component to the given image.
+intensity-component img img-intensity
+
+#Flip image vertically
+vertical-flip img img-vertical
+
+#Flip image horizontally
+horizontal-flip img img-horizontal
+
+#Apply sepia tome the given image.
+sepia img img-sepia
+
+#flip the vertically flipped img horizontally
+horizontal-flip img-vertical img-vertical-horizontal
+
+#create a greyscale using only the value component, as an image img-greyscale
+value-component img img-greyscale
+
+#save img-brighter
+save img-brighter.png img-brighter
+
+#save img-greyscale
+save img-gs.jpeg img-greyscale
+
+#overwrite img with another file
+load img1.png img
+
+#give the img a red tint
+rgb-split img img-red img-green img-blue
+
+#brighten just the red image
+brighten 50 img-red img-red
+
+#combine them back, but by using the brightened red we get a red tint
+rgb-combine img-red-tint img-red img-green img-blue
+save img-red-tint.jpeg img-red-tint
+
+#Compress the version of an image
+compress 20 img img-compressed
+save img-compressed.jpeg img-compressed
+
+#Represents the histogram of a given image
+histogram img img-histogram
+save img-histogram.jpeg img-histogram
+
+#Color-correct an image by aligning the meaningful peaks of its histogram.
+color-correct img img-colored
+save img-colored.jpeg img-colored
+
+#Adjusts the levels of an image three relevant black, mid and white values respectively.
+levels-adjust 20 130 255 img img-adjusted
+save img-adjusted.jpeg img-adjusted
+
+#Specify a vertical line to generate a split view of operations.
+blur img img-split split 70
+save img-split.jpeg img-split
+
+#Generates a split view of blur operation.
+blur img img-blurSplit split 70
+save img-blurSplit.jpeg img-blurSplit
+
+#Generates a split view of sharpen operation.
+sharpen img img-sharpenSplit split 70
+save img-sharpenSplit.jpeg img-sharpenSplit
+
+#Generates a brightened view of blur operation.
+brighten 50 img img-brightenSplit split 70
+save img-brightenSplit.jpeg img-brightenSplit
+
+#Generates a split view of blue component operation.
+blue-component img img-blueSplit split 70
+save img-blueSplit.jpeg img-blueSplit
+
+#Generates a split view of green component operation.
+green-component img img-greenSplit split 70
+save img-greenSplit.jpeg img-greenSplit
+
+#Generates a split view of red component operation.
+red-component img img-redSplit split 70
+save img-redSplit.jpeg img-redSplit
+
+#Generates a split view of luma component operation.
+luma-component img img-lumaSplit split 70
+save img-lumaSplit.jpeg img-lumaSplit
+
+#Generates a split view of intensity component operation.
+intensity-component img img-intensitySplit split 70
+save img-intensitySplit.jpeg img-intensitySplit
+
+#Generates a split view of value component operation.
+value-component img img-valueSplit split 70
+save img-valueSplit.jpeg img-valueSplit
+
+#Generates a split view of sharpen operation.
+sepia img img-sepiaSplit split 70
+save img-sepiaSplit.jpeg img-sepiaSplit
+
+#Generates a split view of color corrected operation.
+color-correct img img-ccSplit split 70
+save img-colorCorrectSplit.jpeg img-ccSplit
+
+#Generates a split view of levels adjust operation.
+levels-adjust 30 138 255 img img-laSplit split 70
+save img-laSplit.jpeg img-laSplit
