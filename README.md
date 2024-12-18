@@ -10,24 +10,6 @@ The application follows the **Model-View-Controller (MVC)** architecture, where:
 - **View**: Provides a graphical user interface (GUI) for user interaction.  
 - **Controller**: Processes user commands, interacts with the model, and updates the view.  
 
-## Changes Across Assignments  
-
-### Assignment 4 to Assignment 5  
-1. **Model Enhancements**: Added operations:  
-   - Compress  
-   - Histogram  
-   - Color Correction  
-   - Levels Adjustment  
-   - Split View  
-2. **Controller Updates**: The `ImageControllerImpl` was updated to handle new operations.  
-
-### Assignment 5 to Assignment 6  
-1. **Model Enhancements**: Added image downscaling functionality.  
-2. **Controller Updates**: Updated `ImageControllerImpl` to support image resizing.  
-3. **View Enhancements**: Added GUI functionality, including:  
-   - New resize button  
-   - Input fields for resizing dimensions  
-   - Event handling for image downscaling  
 
 ## Project Structure  
 
