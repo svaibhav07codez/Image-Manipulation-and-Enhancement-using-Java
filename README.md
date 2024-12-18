@@ -154,13 +154,13 @@ Preview the original and manipulated images side-by-side for the following opera
 
 - compress percentage image-name dest-image-name: modifies the pixel values of the specified image by a given percentage, resulting in a compressed version of the image (in terms of size), which is then stored with a new name.
   
- ● color-correct image-name dest-image-name: color corrects an image by aligning the meaningful peaks of its histogram.
+- color-correct image-name dest-image-name: color corrects an image by aligning the meaningful peaks of its histogram.
 
- ● histogram image-name dest-image-name: produces an image that gives a histogram for the given image.
+- histogram image-name dest-image-name: produces an image that gives a histogram for the given image.
  
- ● levels-adjust b m w image-name dest-image-name: adjusts the color meaningfully in an image where b, m, and w are the three relevant black, mid, and white values respectively. The values should be in ascending order.
+- levels-adjust b m w image-name dest-image-name: adjusts the color meaningfully in an image where b, m, and w are the three relevant black, mid, and white values respectively. The values should be in ascending order.
  
- ● Operations Preview: For certain operations, a split view of the image can be seen. The operated image is on the left and the original image is on the right. blur, sharpen, sepia, greyscale (red component, green component, blue component, luma component, value component, intensity component), color correction, and levels adjustment. To use this feature, give the command as mentioned earlier followed by “split percentage_value”.
+- Operations Preview: For certain operations, a split view of the image can be seen. The operated image is on the left and the original image is on the right. blur, sharpen, sepia, greyscale (red component, green component, blue component, luma component, value component, intensity component), color correction, and levels adjustment. To use this feature, give the command as mentioned earlier followed by “split percentage_value”.
 
 
  ## Citation
