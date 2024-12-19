@@ -115,14 +115,14 @@ Preview the original and manipulated images side-by-side for the following opera
 
 #### Option 2: Script-file Mode
 
- java-jar [Program.jar-file] [path-of-script-file]
+ java -jar [Program.jar-file] [path-of-script-file]
 
  - This will now automatically run all the commands in the script file.
  - If any error occurs while executing any command, a message starting with “Error: “ will be displayed in the terminal.
 
 #### Option 3: Text Mode
 
- java-jar [Program.jar-text]
+ java -jar [Program.jar-text]
 
  - This will now ask for input from the user.
  - Follow the rules below to use the available operations.
