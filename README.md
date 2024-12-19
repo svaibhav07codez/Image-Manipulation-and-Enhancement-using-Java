@@ -122,7 +122,7 @@ Preview the original and manipulated images side-by-side for the following opera
 
 #### Option 3: Text Mode
 
- java -jar [Program.jar-text]
+ java -jar [Program.jar] -text
 
  - This will now ask for input from the user.
  - Follow the rules below to use the available operations.
@@ -130,9 +130,9 @@ Preview the original and manipulated images side-by-side for the following opera
 
 ## Rules for Commands
 
-- load image-path image-name: Load an image from the specified path and refer to it to henceforth in the program by the given image name.
+- load image-path image-name: Load an image from the specified path and refer to it in the program by the given image name.
 
-- save image-path image-name: Save the image with the given name to the specified path which should include the name of the file.
+- save image-path image-name: Save the image with the given name to the specified path which should include the file name.
 
 - red-component image-name dest-image-name: Create an image with the red-component of the image with the given name, and refer to it henceforth in the program by the given destination name. Similar commands for green, blue, value, luma, and intensity components should be supported. Note that the value, luma, and intensity images will be greyscale.
 
